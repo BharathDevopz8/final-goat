@@ -3,7 +3,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: awx
-  namespace: 
+  namespace: flux-system
 spec:
   chart:
     spec:
@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: awx-operator  #Change it if needed
-        namespace:  #Change it if needed 
+        namespace: flux-system #Change it if needed 
   interval: 10m
   install: 
     remediation:
