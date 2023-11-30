@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       sourceRef:
-        namespace: flux-system #Change it if needed     
+        namespace: dev-namespace #Change it if needed     
   values:
     AWX:
       enabled: true
